@@ -3,3 +3,4 @@
   roles:
     - install_browsers
     - install_utilities
+    - install_languages
