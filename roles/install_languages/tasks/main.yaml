@@ -1,0 +1,9 @@
+---
+- name: Install Programming Languages (Homebrew)
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  when: ansible_os_family == "Darwin"
+  with_items:
+    - 'rvm'
+    - 'go'
