@@ -1,0 +1,26 @@
+---
+- name: Install (Cask-provided) Productivity Tools
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  when: ansible_os_family == "Darwin"
+  with_items:
+    - 'alfred'
+    - '1password'
+    - 'magicprefs'
+    - 'apache-directory-studio'
+    - 'slack'
+    - 'blue-jeans'
+    - 'textmate'
+    - 'docker'
+
+- name: Install (Homebrew-provided) Productivity Tools
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - 'rvm'
+    - 'git'
+    - 'fzf'
+    - 'jq'
+    - 'kubernetes-cli'

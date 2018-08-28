@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  roles:
+    - install_browsers
+    - install_utilities
