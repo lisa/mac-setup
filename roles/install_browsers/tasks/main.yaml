@@ -1,0 +1,9 @@
+---
+- name: Install Web Browsers
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  when: ansible_os_family == "Darwin"
+  with_items:
+    - 'vivaldi'
+    - 'google-chrome'
