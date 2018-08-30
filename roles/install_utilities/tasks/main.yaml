@@ -1,5 +1,5 @@
 ---
-- name: Install (Cask-provided) Productivity Tools
+- name: Install (Cask-provided) Tools
   homebrew_cask:
     name: "{{ item }}"
     state: present
@@ -10,6 +10,9 @@
     - 'magicprefs'
     - 'apache-directory-studio'
     - 'slack'
+    - 'vagrant'
+    - 'virtualbox'
+    - 'minikube'
     - 'blue-jeans'
     - 'textmate'
     - 'docker'
@@ -23,3 +26,7 @@
     - 'fzf'
     - 'jq'
     - 'kubernetes-cli'
+    - 'terraform'
+    - 'vim'
+    - 'curl'
+    - 'wget'
