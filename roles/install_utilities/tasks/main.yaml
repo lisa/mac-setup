@@ -16,6 +16,7 @@
     - 'blue-jeans'
     - 'textmate'
     - 'docker'
+    - 'sourcetree'
 
 - name: Install (Homebrew-provided) Productivity Tools
   homebrew:
