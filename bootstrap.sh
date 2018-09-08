@@ -6,6 +6,7 @@
 if [[ ! $(which xcodebuild) || ! $(which xcode-select) ]]; then
   echo "Can't find Xcode installed. Use the App Store to install it since it is"
   echo "a pre-requisite for Homebrew"
+  exit 1
 else
   echo "Enter password to accept xcode license"
   sudo -- sh -c 'xcodebuild -license accept ; xcode-select -s /Applications/Xcode.app/Contents/Developer'
