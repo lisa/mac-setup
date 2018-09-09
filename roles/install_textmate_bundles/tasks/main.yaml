@@ -1,0 +1,6 @@
+---
+  - name: Install Textmate Bundles
+    git:
+      repo: "{{ item.value }}"
+      dest: "/Users/{{ lookup('env', 'USER') }}/Library/Application Support/TextMate/Managed/Bundles/{{ item.key }}.tmbundle"
+    with_dict: "{{ bundles }}"
