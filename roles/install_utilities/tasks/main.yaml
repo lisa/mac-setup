@@ -17,6 +17,7 @@
     - 'textmate'
     - 'docker'
     - 'sourcetree'
+    - 'irccloud'
 
 - name: Install (Homebrew-provided) Productivity Tools
   homebrew:
