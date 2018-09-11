@@ -3,9 +3,9 @@
 # Install Homebrew and Ansible
 
 
-if [[ ! $(which xcodebuild) || ! $(which xcode-select) ]]; then
+if [[ ! -d /Applications/Xcode.app ]]; then
   echo "Can't find Xcode installed. Use the App Store to install it since it is"
-  echo "a pre-requisite for Homebrew"
+  echo "a pre-requisite for Homebrew."
   exit 1
 else
   echo "Enter password to accept xcode license"
