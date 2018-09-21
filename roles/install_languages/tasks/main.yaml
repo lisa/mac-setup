@@ -5,5 +5,4 @@
     state: present
   when: ansible_os_family == "Darwin"
   with_items:
-    - 'rvm'
     - 'go'
