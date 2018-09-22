@@ -6,3 +6,12 @@
   when: ansible_os_family == "Darwin"
   with_items:
     - 'go'
+
+- name: Prepare Ruby (rvm) settings
+  set_fact:
+    rvm1_rubies: [ 'ruby-2.0.0', 'ruby-2.5.1', 'ruby-2.4.4' ]
+    rvm1_user: "{{ lookup('env', 'USER') }}"
+
+- name: Install RVM and Rubies
+  include_role:
+    name: rvm_io.ruby

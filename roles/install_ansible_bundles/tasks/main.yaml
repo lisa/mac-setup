@@ -1,0 +1,5 @@
+---
+  - name: Install Ansible Galaxy modules
+    local_action:
+      command ansible-galaxy install "{{ item }}" --roles-path roles
+    with: "{{ bundles }}"
