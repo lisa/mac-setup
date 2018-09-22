@@ -32,3 +32,4 @@
     - 'vim'
     - 'curl'
     - 'wget'
+    - 'gpg'
