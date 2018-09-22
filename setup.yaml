@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   roles:
+    - install_ansible_bundles
     - install_browsers
     - install_utilities
     - install_languages
