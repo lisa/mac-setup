@@ -3,6 +3,7 @@
   homebrew_cask:
     name: "{{ item }}"
     state: present
+  ignore_errors: yes
   when: ansible_os_family == "Darwin"
   with_items:
     - 'vivaldi'
