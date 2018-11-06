@@ -18,6 +18,7 @@
     - 'docker'
     - 'sourcetree'
     - 'irccloud'
+    - 'visual-studio-code'
 
 - name: Install (Homebrew-provided) Productivity Tools
   homebrew:
