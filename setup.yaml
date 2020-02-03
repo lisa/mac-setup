@@ -3,6 +3,6 @@
   roles:
     - install_ansible_bundles
     - install_browsers
-    - install_utilities
     - install_languages
+    - install_utilities
     - install_textmate_bundles
