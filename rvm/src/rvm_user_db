@@ -1,0 +1,3 @@
+# User settings, overrides db settings and persists across installs.
+ruby_configure_flags=--with-readline-dir=/usr/local/opt/readline
+autolibs=3

@@ -1,1 +1,5 @@
-roles/rvm_io.ruby
+/*.lock.json
+/.xcode
+/.homebrew
+/dotfiles/dotrc-master
+
