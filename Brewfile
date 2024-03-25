@@ -77,8 +77,6 @@ brew "tesseract"
 brew "tree"
 brew "vim"
 brew "dive"
-brew "docker-compose", link: false
-brew "docker-machine"
 brew "watch"
 brew "wget"
 brew "yamllint"
